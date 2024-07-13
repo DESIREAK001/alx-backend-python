@@ -1,20 +1,12 @@
 #!/usr/bin/env python3
-"""
-Task 10's module.
-"""
+'''
+100-safe_first_element.py
+'''
+from typing import Any, Sequence, Optional
 
-from typing import Sequence, Any, Union
 
-def safe_first_element(lst: Sequence[Any]) -> Union[Any, None]:
-    """
-    Return the first element of the sequence `lst` if it is not empty.
-
-    Args:
-        lst (Sequence[Any]): A sequence of elements.
-
-    Returns:
-        Union[Any, None]: The first element if `lst` is not empty, otherwise None.
-    """
+def safe_first_element(lst: Sequence[Any]) -> Optional[Any]:
+    ''' return first item of list or none if list is epmty  '''
     if lst:
         return lst[0]
     else:
